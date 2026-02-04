@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111;
+}
+
+.logo {
+    color: #ffb703;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffb703;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://source.unsplash.com/1600x900/?restaurant,food");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.hero-text {
+    color: white;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero-text button {
+    padding: 12px 30px;
+    border: none;
+    background-color: #ffb703;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.hero-text button:hover {
+    background-color: #ffaa00;
+}
+
+/* Menu Section */
+.menu {
+    padding: 60px;
+    background-color: #f8f8f8;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    padding: 0 15px;
+    color: #555;
+}
+
+.card span {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffb703;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
